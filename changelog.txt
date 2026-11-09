@@ -1,0 +1,78 @@
+================================================================================
+                    Andromeda Writer - Changelog
+================================================================================
+
+Version 1.0.2 (November 2026)
+--------------------------------------------------------------------------------
+Summary:
+This update brings major stability enhancements to project management,
+improved startup performance, seamless light theme contrast fixes, and
+installer packaging optimizations for Windows and the Microsoft Store.
+
+[Improvements & New Features]
+* Open Project Location in Explorer:
+  - Added "Open location" action to the project list context menu, allowing
+    users to jump directly to the project folder inside Windows File Explorer.
+
+* Smarter Startup & Manual Compile Workflow:
+  - Stopped automatic compilation on application launch and project load.
+    Projects and documents now open instantly without delay or unnecessary
+    background compiler overhead.
+  - Manual compilation via the header Compile button, Settings, or shortcuts
+    (Ctrl+R, F5) continues to automatically save any unsaved edits before building.
+  - Auto-compile on Save (Ctrl+S or auto-save) remains fully functional.
+
+[Bug Fixes & Refinements]
+* Reliable Project & Folder Deletion:
+  - Fixed Windows file lock and permission issues when deleting or removing
+    projects with their folders from the workspace.
+  - Implemented automatic process working directory decoupling, garbage
+    collection for file handle release, and read-only attribute clearance.
+  - Added dedicated `forget_project` backend routine to purge deleted project
+    references cleanly from user settings and recent workspaces.
+  - Added informative dialog reporting if external processes (e.g. OneDrive,
+    Windows Explorer) hold active file locks during deletion.
+
+* Light Theme Contrast & Visual Fixes:
+  - Fixed dark background issue on the "Configure Gemini API Key" modal window
+    in light theme; the dialog now displays a bright, clean white surface.
+  - Enhanced contrast of the API Key notification banner text (dark slate body
+    text and royal blue label) ensuring clear legibility against light surfaces
+    while leaving dark mode aesthetics untouched.
+  - Optimized external API Studio hyperlink color for light theme.
+
+* Packaging & Installer Enhancements:
+  - Cleaned up OPC conflicting docx templates during PyInstaller build in
+    build.py, resolving Microsoft Store MSIX error 0x80510005.
+  - Updated Inno Setup scripts (standard, force uninstall, uninstall settings)
+    and Advanced Installer (.aip) configurations to version 1.0.2.
+
+================================================================================
+
+Version 1.0.1 (November 2026)
+--------------------------------------------------------------------------------
+Summary:
+Maintenance and enhancement release introducing custom API key management,
+session security enhancements, and robust packaging scripts.
+
+* Added custom user Gemini API Key support (BYOK) with local encryption.
+* Integrated remote OTA update check and critical update notification.
+* Enhanced TeX engine detection and missing LaTeX installation warnings with
+  direct TeX Live / MiKTeX setup guidance.
+* Fixed context menu paste actions and multi-device login session handling.
+* Packaging and release pipeline configuration for Windows and Linux.
+
+================================================================================
+
+Version 1.0.0 (October 2026)
+--------------------------------------------------------------------------------
+Summary:
+Initial production release of Andromeda Writer.
+
+* Full-featured LaTeX editing with Monaco editor, dual-theme support (Dark/Light),
+  integrated PDF.js viewer, and sync scrolling.
+* Multi-agent AI tools: AI Paper Writer, Literature Survey & Citation Search,
+  Manuscript Reviewer, and Word (.docx) to LaTeX converter.
+* Project and file management with multi-file LaTeX project support.
+================================================================================
+

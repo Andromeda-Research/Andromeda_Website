@@ -1,15 +1,21 @@
 {
-  "app_version": "1.0.1",
-  "release_date": "2026-11-06",
+  "app_version": "1.0.2",
+  "release_date": "2026-11-09",
   "critical": false,
-  "title": "Andromeda Writer v1.0.1 Released",
-  "message": "Official cross-platform release with high-speed TeX engine integration and multi-agent AI LaTeX tools.",
+  "title": "Andromeda Writer v1.0.2 Released",
+  "message": "Major stability enhancements, workspace project management improvements, and refined light-theme contrast.",
   "release_notes_url": "https://andromedawriter.com/download.html",
   "binaries": {
-    "windows_setup": "https://github.com/DwaipayanDeb/Andromeda_Website/releases/download/v1.0.1/Andromeda_Setup.exe",
-    "linux_deb": "https://github.com/DwaipayanDeb/Andromeda_Website/releases/download/v1.0.1/andromeda-writer_amd64.deb",
-    "linux_rpm": "https://github.com/DwaipayanDeb/Andromeda_Website/releases/download/v1.0.1/andromeda-writer-x86_64.rpm",
-    "linux_appimage": "https://github.com/DwaipayanDeb/Andromeda_Website/releases/download/v1.0.1/Andromeda-x86_64.AppImage"
+    "windows_setup": "https://github.com/Andromeda-Research/Andromeda_Website/releases/download/v1.0.2/Andromeda_setup.exe",
+    "linux_deb": "https://github.com/Andromeda-Research/Andromeda_Website/releases/download/v1.0.2/andromeda-writer_amd64.deb",
+    "linux_rpm": "https://github.com/Andromeda-Research/Andromeda_Website/releases/download/v1.0.2/andromeda-writer-x86_64.rpm",
+    "linux_appimage": "https://github.com/Andromeda-Research/Andromeda_Website/releases/download/v1.0.2/Andromeda-x86_64.AppImage"
+  },
+  "checksums": {
+    "windows_setup": "5d49d56f50f4e2accccfbad0aa181116730d8794e3d7e96ef5750682010cd281",
+    "linux_deb": "42bc1ebab9fef55edb7453d41b72004c8110dfbfa3ff03504feb7a4a097baadf",
+    "linux_rpm": "34547554ebc376933b0ae9cca7dcb36e1d00977d2ac1bf9b7d3052ab210309c6",
+    "linux_appimage": "fbd8a4362107421d0b59e5d06bf3c40708c99999ed0db04d4ad30d628ab9b4cd"
   },
   "models": {
     "manifest_url": "https://firebasestorage.googleapis.com/v0/b/andromeda-latex-editor.appspot.com/o/models%2Fmanifest.json?alt=media",
